@@ -1,0 +1,16 @@
+{
+  "name": "activejs-bench",
+  "private": true,
+  "type": "module",
+  "description": "Benchmarks for @bugloper/activejs against Rails ActiveSupport and common npm equivalents.",
+  "scripts": {
+    "bench": "node run.js",
+    "bench:write": "node run.js --write"
+  },
+  "dependencies": {
+    "date-fns": "4.4.0",
+    "lodash": "4.17.21",
+    "mitata": "1.0.34",
+    "pluralize": "8.0.0"
+  }
+}

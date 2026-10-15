@@ -103,6 +103,56 @@ These have no meaningful JS equivalent, or they belong to Rails' runtime rather 
 
 Type declarations ship with the package and are generated from JSDoc in the sources. Importing `@bugloper/activejs/core_ext` also adds global declarations, so `"person".pluralize()` and `(2).days()` type-check. Some members are defined at runtime and can't be typed statically, such as `CurrentAttributes.attribute(...)` accessors and `StringInquirer`'s dynamic predicates. Those resolve to `any`.
 
+## Benchmarks
+
+The same operations, with the same inputs, run against Rails' ActiveSupport (via `benchmark-ips`) and, where one exists, the closest popular npm package or built-in. Treat them as rough guides: they're single-machine microbenchmarks.
+
+<!-- bench:start -->
+Operations per second (higher is better), measured on Node v26.10.0, Ruby 4.0.6, ActiveSupport 8.1.4, Apple M1.
+
+| Operation | activejs | Rails ActiveSupport | activejs vs Rails | Other JS |
+| --- | ---: | ---: | ---: | --- |
+| `pluralize("octopus")` | 1.16M | 162.1K | 7.1× | activejs (method): 1.17M<br>pluralize (npm): 1.14M |
+| `singularize("people")` | 1.66M | 364.6K | 4.5× | pluralize (npm): 1.76M |
+| `camelize("active_model_errors", false)` | 1.59M | 469.7K | 3.4× | lodash camelCase: 2.70M |
+| `underscore("ActiveModelErrors")` | 2.75M | 717.3K | 3.8× | lodash snakeCase: 4.00M |
+| `titleize("man from the boondocks")` | 987.8K | 204.5K | 4.8× | lodash startCase: 2.33M |
+| `parameterize("Donald E. Knuth & Crème brûlée")` | 244.1K | 141.6K | 1.7× | lodash kebabCase: 2.11M |
+| `numberToCurrency(1234567.891)` | 1.19M | 33.1K | 35.9× | Intl.NumberFormat: 2.26M |
+| `numberToDelimited(12345678)` | 2.69M | 176.2K | 15.2× | toLocaleString: 98.5K |
+| `numberToHumanSize(1234567)` | 1.04M | 20.5K | 50.7× | — |
+| `beginningOfMonth(date)` | 3.96M | 250.8K | 15.8× | date-fns: 6.84M |
+| `advance(date, { months: 1 })` | 1.78M | 351.6K | 5.0× | date-fns: 4.69M |
+| `strftime(date, "%Y-%m-%d %H:%M:%S")` | 1.14M | 1.55M | 0.7× | date-fns: 605.3K |
+| `Duration.parse("P3Y6M4DT12H30M5S")` | 520.2K | 120.8K | 4.3× | — |
+| `days(2).plus(hours(3)).inspect()` | 726.2K | 400.3K | 1.8× | — |
+| `zone.local(2024, 3, 10, 1, 30).plus(hours(1))` | 38.3K | 166.9K | 0.2× | — |
+| `truncate(text, 27, { separator: " " })` | 40.82M | 2.40M | 17.0× | — |
+| `squish(text)` | 7.69M | 897.7K | 8.6× | — |
+| `toSentence([4 words])` | 11.53M | 241.2K | 47.8× | — |
+| `isBlank("   ")` | 63.11M | 5.79M | 10.9× | — |
+| `MemoryStore#fetch` (hit) | 902.7K | 275.8K | 3.3× | — |
+| `MessageVerifier` generate + verify | 178.4K | 84.3K | 2.1× | — |
+| `MessageEncryptor` encrypt + decrypt | 122.1K | 135.8K | 0.9× | — |
+| `JSON.encode(record)` | 483.2K | 824.0K | 0.6× | JSON.stringify: 737.0K |
+| `runCallbacks` (2 before, 1 after) | 6.01M | 588.7K | 10.2× | — |
+<!-- bench:end -->
+
+What the numbers mean:
+
+- **Against Rails:** most operations are several times faster, mainly because V8 runs this kind of code faster than Ruby, not because of anything clever in the port.
+- **Where activejs is slower:**
+  - Time zone math (`TimeWithZone`) is about 5× slower than Rails. Every zone conversion goes through `Intl.DateTimeFormat#formatToParts`, and resolving a local time safely across DST takes several of those calls. If you do zone math in a hot loop, convert once and work with the results.
+  - `strftime` is a little slower than Ruby's, which is implemented in C.
+  - `JSON.encode` walks the value to apply Rails' `as_json` rules (dates, Maps, Sets, `asJson()` hooks, HTML-safe escaping) before stringifying, so it's slower than `JSON.stringify`.
+- **The lodash columns aren't equivalent:** `camelCase`, `snakeCase`, `startCase` and `kebabCase` don't follow Rails' inflection rules (acronyms, `_id` suffixes, `::` namespaces) and don't transliterate accents the way `parameterize` does. They're included to show the cost of that extra work.
+
+To rerun the benchmarks (Ruby, `activesupport` and `benchmark-ips` are needed for the Rails column):
+
+```sh
+cd bench && npm install && npm run bench:write   # updates the table above
+```
+
 ## Development
 
 ```sh
