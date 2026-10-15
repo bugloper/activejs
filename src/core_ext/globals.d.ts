@@ -1,4 +1,4 @@
-// Global type augmentations for `import "activejs/core_ext"`.
+// Global type augmentations for `import "@bugloper/activejs/core_ext"`.
 //
 // The build appends this file to the generated types/core_ext/register.d.ts,
 // so import paths are relative to types/core_ext/. Signatures for String,

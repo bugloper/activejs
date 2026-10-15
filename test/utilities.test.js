@@ -265,7 +265,7 @@ test("functional API still works with core_ext installed", async () => {
   }
 });
 
-test("prototype extensions (activejs/core_ext)", async () => {
+test("prototype extensions (@bugloper/activejs/core_ext)", async () => {
   // Install explicitly: the module may already be loaded (and uninstalled) by
   // another test file when a runner shares one process across files.
   const { install, uninstall } = await import("../src/core_ext/register.js");

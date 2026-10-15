@@ -6,9 +6,9 @@ import {
   Callbacks, abort, Notifications, Cache, CurrentAttributes, MessageVerifier, MessageEncryptor,
   KeyGenerator, ErrorReporter, Logger, TaggedLogging, ParameterFilter, htmlSafe, SafeBuffer,
   DateExt, StringExt, HashExt,
-} from "activejs";
-import { MemoryStore } from "activejs/cache";
-import { travelTo, freezeTime } from "activejs/testing";
+} from "@bugloper/activejs";
+import { MemoryStore } from "@bugloper/activejs/cache";
+import { travelTo, freezeTime } from "@bugloper/activejs/testing";
 
 const s1: string = pluralize("person");
 const s2: string = camelize("active_model", false);

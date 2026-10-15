@@ -1,5 +1,5 @@
 // Appends the hand-written global augmentations to the generated
-// declarations for "activejs/core_ext" (JSDoc can't express `declare global`).
+// declarations for "@bugloper/activejs/core_ext" (JSDoc can't express `declare global`).
 // Run after `tsc`; see the build:types script.
 import { readFileSync, appendFileSync } from "node:fs";
 

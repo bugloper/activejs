@@ -1,6 +1,6 @@
 // Port of ActiveSupport::Duration, including ISO 8601 parsing/serialization.
 //
-//   import { days, hours, Duration } from "activejs"
+//   import { days, hours, Duration } from "@bugloper/activejs"
 //   days(2).plus(hours(3)).fromNow()
 //   Duration.parse("P3Y6M4DT12H30M5S").inspect()
 //   // => "3 years, 6 months, 4 days, 12 hours, 30 minutes, and 5 seconds"

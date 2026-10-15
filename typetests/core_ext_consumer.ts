@@ -1,6 +1,6 @@
-// Compile-only checks for the global augmentations from "activejs/core_ext".
-import "activejs/core_ext";
-import type { Duration, TimeWithZone } from "activejs";
+// Compile-only checks for the global augmentations from "@bugloper/activejs/core_ext".
+import "@bugloper/activejs/core_ext";
+import type { Duration, TimeWithZone } from "@bugloper/activejs";
 
 const people: string = "person".pluralize();
 const camel: string = "active_model".camelize("lower");

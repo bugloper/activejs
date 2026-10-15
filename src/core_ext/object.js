@@ -11,7 +11,7 @@ export const isPlainObject = (value) => {
   return proto === Object.prototype || proto === null;
 };
 
-// Marks functions installed by activejs/core_ext. Hooks such as isBlank(),
+// Marks functions installed by @bugloper/activejs/core_ext. Hooks such as isBlank(),
 // deepDup(), toParam() and asJson() let objects customise behaviour, but once
 // the prototypes are patched every string/array/date "has" those methods; a
 // hook that is really the extension would just call back in and recurse.

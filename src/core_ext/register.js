@@ -1,7 +1,7 @@
 // Opt-in prototype extensions, the JS analogue of
 // `require "active_support/core_ext"`.
 //
-//   import "activejs/core_ext";
+//   import "@bugloper/activejs/core_ext";
 //   "person".pluralize()              // => "people"
 //   (2).days().fromNow()              // => Date two days from now
 //   [1, 2, 3].toSentence()            // => "1, 2, and 3"

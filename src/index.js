@@ -1,7 +1,7 @@
 // activejs — a port of Rails' ActiveSupport to JavaScript.
 //
 // Everything here is side-effect free. For Rails-style prototype extensions
-// ("person".pluralize(), (2).days().ago()) import "activejs/core_ext".
+// ("person".pluralize(), (2).days().ago()) import "@bugloper/activejs/core_ext".
 
 // Inflector
 export * as Inflector from "./inflector/index.js";
