@@ -1,6 +1,6 @@
 {
   "name": "@bugloper/activejs",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A port of Rails' ActiveSupport to JavaScript: inflector, durations, date calculations, callbacks, notifications, caching, message verification and core extensions.",
   "author": "bugloper",
   "repository": {
