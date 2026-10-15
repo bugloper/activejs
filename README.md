@@ -8,43 +8,47 @@ Where it makes sense, output is checked against real ActiveSupport. `test/fixtur
 npm install @bugloper/activejs
 ```
 
-```js
-import { pluralize, days, numberToHuman, Time, MessageVerifier } from "@bugloper/activejs";
+Import `core_ext` once, at your app's entry point, and call the methods on strings, arrays, numbers and dates, the way `require "active_support/core_ext"` works in Rails:
 
-pluralize("octopus");                 // "octopi"
-days(2).plus(days(1)).inspect();      // "3 days"
-numberToHuman(1234567);               // "1.23 Million"
+```js
+import "@bugloper/activejs/core_ext";
+
+"   ".isBlank();                         // true
+"person".pluralize();                    // "people"
+"active_model/errors".camelize();        // "ActiveModel::Errors"
+"Once upon a time".truncate(10);         // "Once up..."
+["a", "b", "c"].toSentence();            // "a, b, and c"
+[{ name: "a" }, { name: "b" }].pluck("name"); // ["a", "b"]
+(2).days().ago();                        // Date two days ago
+(1234567).toFs("delimited");             // "1,234,567"
+new Date().beginningOfMonth();
+new Date().plus((1).month());
+```
+
+Classes such as `Duration`, `TimeZone`, `MessageVerifier` and `Cache` come from the main entry point:
+
+```js
+import { Time, MemoryStore, MessageVerifier } from "@bugloper/activejs";
+import "@bugloper/activejs/core_ext";
 
 Time.zone = "Eastern Time (US & Canada)";
-Time.zone.local(2024, 3, 10, 1, 30).plus(hours(1)).toString();
+Time.zone.local(2024, 3, 10, 1, 30).plus((1).hour()).toString();
 // "2024-03-10 03:30:00 -0400"  (crosses the DST gap like Rails)
 ```
 
-## Two ways to use it
+The added methods are non-enumerable. They never replace a method JS already has, so native `String#at` and `Array#at` keep working, and `uninstall()` removes them all. `Object.prototype` is not patched, so for plain objects, `null` and `undefined` use the functions below (`isBlank(null)`, `deepMerge(a, b)`, …).
 
-**Functions (default, side-effect free):**
+### Without patching prototypes
+
+Every method is also exported as a plain function that takes the value as its first argument. That suits libraries, where changing built-in prototypes would affect the people using the library:
 
 ```js
-import { isBlank, toSentence, truncate, DateExt } from "@bugloper/activejs";
+import { isBlank, toSentence, pluralize, DateExt } from "@bugloper/activejs";
 
 isBlank("   ");                          // true
 toSentence(["a", "b", "c"]);             // "a, b, and c"
 DateExt.beginningOfMonth(new Date());
 ```
-
-**Prototype extensions (opt-in)**, the equivalent of `require "active_support/core_ext"`:
-
-```js
-import "@bugloper/activejs/core_ext";
-
-"person".pluralize();                    // "people"
-(2).days().fromNow();                    // Date
-[1, 2, 3].toSentence();                  // "1, 2, and 3"
-new Date().beginningOfWeek();
-(1234567).toFs("delimited");             // "1,234,567"
-```
-
-Extensions are non-enumerable. They never replace an existing property, so native `String#at` and `Array#at` keep working, and `uninstall()` removes them all. `Object.prototype` is not patched. For plain objects, `null` and `undefined`, use the `isBlank`/`isPresent`/`presence`/`tryCall` functions.
 
 ## What's included
 
