@@ -11,9 +11,24 @@ export const isPlainObject = (value) => {
   return proto === Object.prototype || proto === null;
 };
 
-// Marks functions installed by activejs/core_ext so isBlank doesn't mistake
-// the prototype extension for an object's own isBlank() and recurse.
+// Marks functions installed by activejs/core_ext. Hooks such as isBlank(),
+// deepDup(), toParam() and asJson() let objects customise behaviour, but once
+// the prototypes are patched every string/array/date "has" those methods; a
+// hook that is really the extension would just call back in and recurse.
 export const CORE_EXT = Symbol.for("activejs.coreExt");
+
+/**
+ * Returns value[name] if it is a function the value really provides, and
+ * undefined for core_ext prototype extensions.
+ * @param {unknown} value
+ * @param {string} name
+ * @returns {Function | undefined}
+ */
+export function ownHook(value, name) {
+  if (value === null || value === undefined) return undefined;
+  const fn = /** @type {any} */ (value)[name];
+  return typeof fn === "function" && !fn[CORE_EXT] ? fn : undefined;
+}
 
 /**
  * An object is blank if it's false, empty, or a whitespace string.
@@ -29,8 +44,8 @@ export function isBlank(value) {
   if (value instanceof String) return /^\s*$/.test(value.valueOf());
   if (Array.isArray(value)) return value.length === 0;
   if (value instanceof Map || value instanceof Set) return value.size === 0;
-  const custom = /** @type {{ isBlank?: unknown }} */ (value).isBlank;
-  if (typeof custom === "function" && !custom[CORE_EXT]) return custom.call(value);
+  const custom = ownHook(value, "isBlank");
+  if (custom) return custom.call(value);
   if (isPlainObject(value)) return Object.keys(value).length === 0;
   return false;
 }
@@ -125,7 +140,7 @@ export const presenceIn = (value, collection) => (isIn(value, collection) ? valu
 export function deepDup(value) {
   if (value === null || typeof value !== "object") return value;
   const v = /** @type {any} */ (value);
-  if (typeof v.deepDup === "function") return v.deepDup();
+  if (ownHook(v, "deepDup")) return v.deepDup();
   if (Array.isArray(v)) return /** @type {T} */ (v.map(deepDup));
   if (v instanceof Date) return /** @type {T} */ (new Date(v.getTime()));
   if (v instanceof Map) return /** @type {T} */ (new Map([...v].map(([k, x]) => [deepDup(k), deepDup(x)])));
@@ -150,7 +165,7 @@ export function toParam(value) {
   if (Array.isArray(value)) return value.map(toParam).join("/");
   if (isPlainObject(value)) return toQuery(value);
   const v = /** @type {any} */ (value);
-  if (typeof v.toParam === "function") return v.toParam();
+  if (ownHook(v, "toParam")) return v.toParam();
   return String(value);
 }
 

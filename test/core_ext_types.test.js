@@ -17,12 +17,13 @@ function declaredMethods(source) {
 }
 
 test("core_ext global declarations match the installed methods", async () => {
+  // Start from clean prototypes even when the suite runs with core_ext preloaded.
+  const { install, uninstall } = await import("../src/core_ext/register.js");
+  const wasInstalled = typeof "".pluralize === "function";
+  uninstall();
   const before = Object.fromEntries(
     Object.entries(PROTOTYPES).map(([name, ctor]) => [name, new Set(Object.getOwnPropertyNames(ctor.prototype))]),
   );
-  // Install explicitly: the module may already be loaded (and uninstalled) by
-  // another test file when a runner shares one process across files.
-  const { install, uninstall } = await import("../src/core_ext/register.js");
   install();
   const installed = Object.fromEntries(
     Object.entries(PROTOTYPES).map(([name, ctor]) => [
@@ -31,6 +32,7 @@ test("core_ext global declarations match the installed methods", async () => {
     ]),
   );
   uninstall();
+  if (wasInstalled) install();
 
   const declared = declaredMethods(readFileSync(new URL("../src/core_ext/globals.d.ts", import.meta.url), "utf8"));
   for (const name of Object.keys(PROTOTYPES)) {

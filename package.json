@@ -40,7 +40,7 @@
     "node": ">=20"
   },
   "scripts": {
-    "test": "node --test test/",
+    "test": "node --test test/ && node --import ./src/core_ext/register.js --test test/",
     "typecheck": "tsc --noEmit && npm run build:types && tsc -p typetests",
     "build:types": "rm -rf types && tsc && node script/append_core_ext_globals.js",
     "prepack": "npm run build:types"

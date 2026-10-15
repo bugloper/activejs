@@ -10,6 +10,7 @@
 import { AsyncLocalStorage } from "node:async_hooks";
 import { MAPPING } from "./time_zone_mapping.js";
 import { strftime, TIME_FORMATS } from "./core_ext/date.js";
+import { ownHook } from "./core_ext/object.js";
 
 /** @typedef {import("./core_ext/date.js").DayName} DayName */
 /** @typedef {import("./core_ext/date.js").AdvanceOptions} AdvanceOptions */
@@ -481,7 +482,7 @@ export class TimeWithZone {
    * @returns {TimeWithZone}
    */
   plus(other) {
-    if (typeof other !== "number" && other && typeof other.since === "function" && !(other instanceof TimeWithZone)) return other.since(this);
+    if (typeof other !== "number" && ownHook(other, "since") && !(other instanceof TimeWithZone)) return other.since(this);
     return this.since(Number(other));
   }
 
@@ -502,7 +503,7 @@ export class TimeWithZone {
    */
   minus(other) {
     if (other instanceof TimeWithZone || other instanceof Date) return (this.utcMs - other.getTime()) / 1000;
-    if (typeof other !== "number" && other && typeof other.ago === "function") return other.ago(this);
+    if (typeof other !== "number" && ownHook(other, "ago")) return other.ago(this);
     return this.ago(Number(other));
   }
 

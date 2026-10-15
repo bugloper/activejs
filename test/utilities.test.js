@@ -238,10 +238,38 @@ test("time zones: Time.zone, useZone, find, conversions", async () => {
   assert.equal(new Date(2024, 0, 1) < ny, true, "TimeWithZone compares by instant via valueOf");
 });
 
+test("functional API still works with core_ext installed", async () => {
+  // Regression: hooks such as toParam()/deepDup()/asJson() used to find the
+  // prototype extension itself and recurse until the stack overflowed.
+  const { install, uninstall } = await import("../src/core_ext/register.js");
+  const wasInstalled = typeof "".pluralize === "function";
+  install();
+  try {
+    const { toParam, toQuery, deepDup, isBlank } = await import("../src/core_ext/object.js");
+    const { MemoryStore } = await import("../src/cache.js");
+    const { sum } = await import("../src/core_ext/array.js");
+    assert.equal(toParam("x"), "x");
+    assert.equal(toParam(5), "5");
+    assert.equal(toQuery({ a: [1, 2], b: "c d" }), "a%5B%5D=1&a%5B%5D=2&b=c+d");
+    assert.deepEqual(deepDup([1, [2]]), [1, [2]]);
+    assert.equal(deepDup(new Date(0)).getTime(), 0);
+    assert.equal(isBlank([]), true);
+    assert.equal(encode([1, new Date(Date.UTC(2024, 0, 1)), new Set(["a"])]), '[1,"2023-12-31T19:00:00.000-05:00",["a"]]');
+    const cache = new MemoryStore();
+    assert.equal(cache.fetch("k", () => 1), 1);
+    assert.equal(cache.fetch(5, () => 2), 2);
+    assert.equal(cache.fetch(["a", 1, new Date(0)], () => 3), 3);
+    assert.equal(sum([days(1), hours(1)]).inspect(), "1 day and 1 hour");
+  } finally {
+    if (!wasInstalled) uninstall();
+  }
+});
+
 test("prototype extensions (activejs/core_ext)", async () => {
   // Install explicitly: the module may already be loaded (and uninstalled) by
   // another test file when a runner shares one process across files.
   const { install, uninstall } = await import("../src/core_ext/register.js");
+  const wasInstalled = typeof "".pluralize === "function";
   install();
   try {
     assert.equal("person".pluralize(), "people");
@@ -278,6 +306,7 @@ test("prototype extensions (activejs/core_ext)", async () => {
     uninstall();
   }
   assert.equal("person".pluralize, undefined);
+  if (wasInstalled) install();
 });
 
 test("url-safe encrypted messages survive '--' inside the base64url payload", () => {

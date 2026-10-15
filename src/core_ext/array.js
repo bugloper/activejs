@@ -1,5 +1,5 @@
 // Port of active_support/core_ext/array and core_ext/enumerable.
-import { isBlank, isPlainObject } from "./object.js";
+import { isBlank, isPlainObject, ownHook } from "./object.js";
 
 // ---- Array -----------------------------------------------------------------
 
@@ -355,7 +355,7 @@ export function sum(enumerable, fn, identity) {
       started = true;
       continue;
     }
-    total = total !== null && typeof total?.plus === "function" ? total.plus(value) : total + value;
+    total = ownHook(total, "plus") ? total.plus(value) : total + value;
   }
   return started ? total : 0;
 }

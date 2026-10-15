@@ -9,7 +9,7 @@
 // (sorted query string), or anything with cacheKey() (and optionally cacheVersion()).
 // Durations may be Duration instances or numbers of seconds.
 import { Notifications } from "./notifications.js";
-import { isPlainObject, toParam } from "./core_ext/object.js";
+import { isPlainObject, toParam, ownHook } from "./core_ext/object.js";
 
 /** @typedef {number | import("./duration.js").Duration} Seconds A number of seconds or a Duration. */
 
@@ -110,7 +110,7 @@ export function expandCacheKey(key, namespace) {
   else if (Array.isArray(k)) expanded = k.length ? k.map((x) => expandCacheKey(x)).join("/") : "";
   else if (isPlainObject(k)) {
     expanded = Object.keys(k).sort().map((x) => `${x}=${toParam(k[x])}`).join("/");
-  } else if (k && typeof k.toParam === "function") expanded = k.toParam();
+  } else if (ownHook(k, "toParam")) expanded = k.toParam();
   else expanded = String(k);
   return namespace ? `${typeof namespace === "function" ? namespace() : namespace}:${expanded}` : expanded;
 }

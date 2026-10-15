@@ -8,6 +8,7 @@
 // toJSON() controls its own representation, and "<", ">", "&", U+2028 and
 // U+2029 are escaped so the output is safe inside <script> tags.
 import { iso8601 } from "./core_ext/date.js";
+import { ownHook } from "./core_ext/object.js";
 
 /**
  * @typedef {null | boolean | number | string | unknown[] | JsonObject} JsonValue
@@ -38,7 +39,7 @@ export function asJson(value, options = {}) {
   if (typeof value === "symbol") return value.description ?? null;
   if (typeof value === "function") return undefined;
   const obj = /** @type {any} */ (value);
-  if (typeof obj.asJson === "function") return asJson(obj.asJson(options), options);
+  if (ownHook(obj, "asJson")) return asJson(obj.asJson(options), options);
   if (value instanceof Date) {
     if (Number.isNaN(value.getTime())) return null;
     return Encoding.useStandardJsonTimeFormat
