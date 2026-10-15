@@ -2,6 +2,15 @@
   "name": "activejs",
   "version": "0.1.0",
   "description": "A port of Rails' ActiveSupport to JavaScript: inflector, durations, date calculations, callbacks, notifications, caching, message verification and core extensions.",
+  "author": "bugloper",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bugloper/activejs.git"
+  },
+  "homepage": "https://github.com/bugloper/activejs#readme",
+  "bugs": {
+    "url": "https://github.com/bugloper/activejs/issues"
+  },
   "type": "module",
   "main": "./src/index.js",
   "types": "./types/index.d.ts",
