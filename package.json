@@ -1,0 +1,52 @@
+{
+  "name": "activejs",
+  "version": "0.1.0",
+  "description": "A port of Rails' ActiveSupport to JavaScript: inflector, durations, date calculations, callbacks, notifications, caching, message verification and core extensions.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./core_ext": {
+      "types": "./types/core_ext/register.d.ts",
+      "default": "./src/core_ext/register.js"
+    },
+    "./testing": {
+      "types": "./types/testing/time_helpers.d.ts",
+      "default": "./src/testing/time_helpers.js"
+    },
+    "./*": {
+      "types": "./types/*.d.ts",
+      "default": "./src/*.js"
+    }
+  },
+  "files": [
+    "src",
+    "types"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test test/",
+    "typecheck": "tsc --noEmit && npm run build:types && tsc -p typetests",
+    "build:types": "rm -rf types && tsc && node script/append_core_ext_globals.js",
+    "prepack": "npm run build:types"
+  },
+  "keywords": [
+    "activesupport",
+    "rails",
+    "inflector",
+    "pluralize",
+    "duration",
+    "callbacks"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "^5.9.3"
+  }
+}

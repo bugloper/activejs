@@ -1,0 +1,1835 @@
+{
+  "pluralize": {
+    "search": "searches",
+    "switch": "switches",
+    "fix": "fixes",
+    "box": "boxes",
+    "process": "processes",
+    "address": "addresses",
+    "case": "cases",
+    "stack": "stacks",
+    "wish": "wishes",
+    "fish": "fish",
+    "jeans": "jeans",
+    "funky": "funkies",
+    "my": "mies",
+    "money": "money",
+    "category": "categories",
+    "query": "queries",
+    "ability": "abilities",
+    "agency": "agencies",
+    "movie": "movies",
+    "archive": "archives",
+    "index": "indices",
+    "wife": "wives",
+    "safe": "saves",
+    "half": "halves",
+    "perspective": "perspectives",
+    "person": "people",
+    "people": "people",
+    "man": "men",
+    "men": "men",
+    "child": "children",
+    "children": "children",
+    "sex": "sexes",
+    "move": "moves",
+    "cow": "cows",
+    "zombie": "zombies",
+    "octopus": "octopi",
+    "virus": "viri",
+    "alias": "aliases",
+    "status": "statuses",
+    "bus": "buses",
+    "buffalo": "buffaloes",
+    "tomato": "tomatoes",
+    "tomatoes": "tomatoes",
+    "datum": "data",
+    "medium": "media",
+    "stadium": "stadia",
+    "analysis": "analyses",
+    "analyses": "analyses",
+    "basis": "bases",
+    "diagnosis": "diagnoses",
+    "parenthesis": "parentheses",
+    "prognosis": "prognoses",
+    "synopsis": "synopses",
+    "thesis": "theses",
+    "axis": "axes",
+    "crisis": "crises",
+    "testis": "testes",
+    "hive": "hives",
+    "news": "news",
+    "series": "series",
+    "species": "species",
+    "information": "information",
+    "equipment": "equipment",
+    "rice": "rice",
+    "sheep": "sheep",
+    "police": "police",
+    "shoe": "shoes",
+    "horse": "horses",
+    "prize": "prizes",
+    "edge": "edges",
+    "database": "databases",
+    "matrix": "matrices",
+    "vertex": "vertices",
+    "mouse": "mice",
+    "louse": "lice",
+    "ox": "oxen",
+    "oxen": "oxen",
+    "quiz": "quizzes",
+    "user": "users",
+    "post": "posts",
+    "comment": "comments",
+    "admin_user": "admin_users",
+    "Person": "People",
+    "PERSON": "People",
+    "Status": "Statuses",
+    "Mouse": "Mice",
+    "Quiz": "Quizzes",
+    "dwarf": "dwarves",
+    "elf": "elves",
+    "leaf": "leafs",
+    "loaf": "loafs",
+    "thief": "thiefs",
+    "wolf": "wolves",
+    "knife": "knives",
+    "life": "lives",
+    "knives": "knives",
+    "elves": "elves",
+    "halves": "halves",
+    "photo": "photos",
+    "piano": "pianos",
+    "hero": "heros",
+    "potato": "potatos",
+    "echo": "echos",
+    "veto": "vetos",
+    "day": "days",
+    "toy": "toys",
+    "key": "keys",
+    "boy": "boys",
+    "guy": "guys",
+    "story": "stories",
+    "city": "cities",
+    "fly": "flies",
+    "sky": "skies",
+    "campus": "campus",
+    "cactus": "cactus",
+    "focus": "focus",
+    "criterion": "criterions",
+    "phenomenon": "phenomenons",
+    "sms": "sms",
+    "dish": "dishes",
+    "bench": "benches",
+    "church": "churches",
+    "kiss": "kisses",
+    "glass": "glasses",
+    "\"\"": "\"\"s"
+  },
+  "singularize": {
+    "search": "search",
+    "switch": "switch",
+    "fix": "fix",
+    "box": "box",
+    "process": "process",
+    "address": "address",
+    "case": "case",
+    "stack": "stack",
+    "wish": "wish",
+    "fish": "fish",
+    "jeans": "jeans",
+    "funky": "funky",
+    "my": "my",
+    "money": "money",
+    "category": "category",
+    "query": "query",
+    "ability": "ability",
+    "agency": "agency",
+    "movie": "movie",
+    "archive": "archive",
+    "index": "index",
+    "wife": "wife",
+    "safe": "safe",
+    "half": "half",
+    "perspective": "perspective",
+    "person": "person",
+    "people": "person",
+    "man": "man",
+    "men": "man",
+    "child": "child",
+    "children": "child",
+    "sex": "sex",
+    "move": "move",
+    "cow": "cow",
+    "zombie": "zombie",
+    "octopus": "octopus",
+    "virus": "virus",
+    "alias": "alias",
+    "status": "status",
+    "bus": "bus",
+    "buffalo": "buffalo",
+    "tomato": "tomato",
+    "tomatoes": "tomato",
+    "datum": "datum",
+    "medium": "medium",
+    "stadium": "stadium",
+    "analysis": "analysis",
+    "analyses": "analysis",
+    "basis": "basis",
+    "diagnosis": "diagnosis",
+    "parenthesis": "parenthesis",
+    "prognosis": "prognosis",
+    "synopsis": "synopsis",
+    "thesis": "thesis",
+    "axis": "axis",
+    "crisis": "crisis",
+    "testis": "testis",
+    "hive": "hive",
+    "news": "news",
+    "series": "series",
+    "species": "species",
+    "information": "information",
+    "equipment": "equipment",
+    "rice": "rice",
+    "sheep": "sheep",
+    "police": "police",
+    "shoe": "shoe",
+    "horse": "horse",
+    "prize": "prize",
+    "edge": "edge",
+    "database": "database",
+    "matrix": "matrix",
+    "vertex": "vertex",
+    "mouse": "mouse",
+    "louse": "louse",
+    "ox": "ox",
+    "oxen": "ox",
+    "quiz": "quiz",
+    "user": "user",
+    "post": "post",
+    "comment": "comment",
+    "admin_user": "admin_user",
+    "Person": "Person",
+    "PERSON": "Person",
+    "Status": "Status",
+    "Mouse": "Mouse",
+    "Quiz": "Quiz",
+    "dwarf": "dwarf",
+    "elf": "elf",
+    "leaf": "leaf",
+    "loaf": "loaf",
+    "thief": "thief",
+    "wolf": "wolf",
+    "knife": "knife",
+    "life": "life",
+    "knives": "knife",
+    "elves": "elf",
+    "halves": "half",
+    "photo": "photo",
+    "piano": "piano",
+    "hero": "hero",
+    "potato": "potato",
+    "echo": "echo",
+    "veto": "veto",
+    "day": "day",
+    "toy": "toy",
+    "key": "key",
+    "boy": "boy",
+    "guy": "guy",
+    "story": "story",
+    "city": "city",
+    "fly": "fly",
+    "sky": "sky",
+    "campus": "campu",
+    "cactus": "cactu",
+    "focus": "focu",
+    "criterion": "criterion",
+    "phenomenon": "phenomenon",
+    "sms": "sm",
+    "dish": "dish",
+    "bench": "bench",
+    "church": "church",
+    "kiss": "kiss",
+    "glass": "glass",
+    "\"\"": "\"\"",
+    "searches": "search",
+    "switches": "switch",
+    "fixes": "fix",
+    "boxes": "box",
+    "processes": "process",
+    "addresses": "address",
+    "cases": "case",
+    "stacks": "stack",
+    "wishes": "wish",
+    "funkies": "funky",
+    "mies": "my",
+    "categories": "category",
+    "queries": "query",
+    "abilities": "ability",
+    "agencies": "agency",
+    "movies": "movie",
+    "archives": "archive",
+    "indices": "index",
+    "wives": "wife",
+    "saves": "safe",
+    "perspectives": "perspective",
+    "sexes": "sex",
+    "moves": "move",
+    "cows": "cow",
+    "zombies": "zombie",
+    "octopi": "octopus",
+    "viri": "virus",
+    "aliases": "alias",
+    "statuses": "status",
+    "buses": "bus",
+    "buffaloes": "buffalo",
+    "data": "datum",
+    "media": "medium",
+    "stadia": "stadium",
+    "bases": "basis",
+    "diagnoses": "diagnosis",
+    "parentheses": "parenthesis",
+    "prognoses": "prognosis",
+    "synopses": "synopsis",
+    "theses": "thesis",
+    "axes": "axis",
+    "crises": "crisis",
+    "testes": "testis",
+    "hives": "hive",
+    "shoes": "shoe",
+    "horses": "horse",
+    "prizes": "prize",
+    "edges": "edge",
+    "databases": "database",
+    "matrices": "matrix",
+    "vertices": "vertex",
+    "mice": "mouse",
+    "lice": "louse",
+    "quizzes": "quiz",
+    "users": "user",
+    "posts": "post",
+    "comments": "comment",
+    "admin_users": "admin_user",
+    "People": "Person",
+    "Statuses": "Status",
+    "Mice": "Mouse",
+    "Quizzes": "Quiz",
+    "dwarves": "dwarf",
+    "leafs": "leaf",
+    "loafs": "loaf",
+    "thiefs": "thief",
+    "wolves": "wolf",
+    "lives": "life",
+    "photos": "photo",
+    "pianos": "piano",
+    "heros": "hero",
+    "potatos": "potato",
+    "echos": "echo",
+    "vetos": "veto",
+    "days": "day",
+    "toys": "toy",
+    "keys": "key",
+    "boys": "boy",
+    "guys": "guy",
+    "stories": "story",
+    "cities": "city",
+    "flies": "fly",
+    "skies": "sky",
+    "criterions": "criterion",
+    "phenomenons": "phenomenon",
+    "dishes": "dish",
+    "benches": "bench",
+    "churches": "church",
+    "kisses": "kiss",
+    "glasses": "glass",
+    "\"\"s": "\"\""
+  },
+  "camelize": {
+    "Product": "Product",
+    "SpecialGuest": "SpecialGuest",
+    "ApplicationController": "ApplicationController",
+    "Area51Controller": "Area51Controller",
+    "active_model": "ActiveModel",
+    "active_model/errors": "ActiveModel::Errors",
+    "html_tidy": "HtmlTidy",
+    "HTMLTidy": "HTMLTidy",
+    "HTMLTidyGenerator": "HTMLTidyGenerator",
+    "ActiveModel::Errors": "ActiveModel::Errors",
+    "ActiveModel": "ActiveModel",
+    "area51_controller": "Area51Controller",
+    "product": "Product",
+    "special_guest": "SpecialGuest",
+    "application_controller": "ApplicationController",
+    "CamelOctopi": "CamelOctopi",
+    "camel_octopus": "CamelOctopus",
+    "FreeBSD": "FreeBSD",
+    "HTML": "HTML",
+    "Capital": "Capital",
+    "capital_city": "CapitalCity",
+    "CapitalCity": "CapitalCity",
+    "SSLError": "SSLError",
+    "ssl_error": "SslError",
+    "PhDRequired": "PhDRequired",
+    "phd_required": "PhdRequired",
+    "CamelCase": "CamelCase",
+    "Camel_Case": "CamelCase",
+    "camel_case": "CamelCase",
+    "camel-case": "Camel-case",
+    "Camel-Case": "Camel-Case"
+  },
+  "camelize_lower": {
+    "Product": "product",
+    "SpecialGuest": "specialGuest",
+    "ApplicationController": "applicationController",
+    "Area51Controller": "area51Controller",
+    "active_model": "activeModel",
+    "active_model/errors": "activeModel::Errors",
+    "html_tidy": "htmlTidy",
+    "HTMLTidy": "hTMLTidy",
+    "HTMLTidyGenerator": "hTMLTidyGenerator",
+    "ActiveModel::Errors": "activeModel::Errors",
+    "ActiveModel": "activeModel",
+    "area51_controller": "area51Controller",
+    "product": "product",
+    "special_guest": "specialGuest",
+    "application_controller": "applicationController",
+    "CamelOctopi": "camelOctopi",
+    "camel_octopus": "camelOctopus",
+    "FreeBSD": "freeBSD",
+    "HTML": "hTML",
+    "Capital": "capital",
+    "capital_city": "capitalCity",
+    "CapitalCity": "capitalCity",
+    "SSLError": "sSLError",
+    "ssl_error": "sslError",
+    "PhDRequired": "phDRequired",
+    "phd_required": "phdRequired",
+    "CamelCase": "camelCase",
+    "Camel_Case": "camelCase",
+    "camel_case": "camelCase",
+    "camel-case": "camel-case",
+    "Camel-Case": "camel-Case"
+  },
+  "underscore": {
+    "Product": "product",
+    "SpecialGuest": "special_guest",
+    "ApplicationController": "application_controller",
+    "Area51Controller": "area51_controller",
+    "active_model": "active_model",
+    "active_model/errors": "active_model/errors",
+    "html_tidy": "html_tidy",
+    "HTMLTidy": "html_tidy",
+    "HTMLTidyGenerator": "html_tidy_generator",
+    "ActiveModel::Errors": "active_model/errors",
+    "ActiveModel": "active_model",
+    "area51_controller": "area51_controller",
+    "product": "product",
+    "special_guest": "special_guest",
+    "application_controller": "application_controller",
+    "CamelOctopi": "camel_octopi",
+    "camel_octopus": "camel_octopus",
+    "FreeBSD": "free_bsd",
+    "HTML": "html",
+    "Capital": "capital",
+    "capital_city": "capital_city",
+    "CapitalCity": "capital_city",
+    "SSLError": "ssl_error",
+    "ssl_error": "ssl_error",
+    "PhDRequired": "ph_d_required",
+    "phd_required": "phd_required",
+    "CamelCase": "camel_case",
+    "Camel_Case": "camel_case",
+    "camel_case": "camel_case",
+    "camel-case": "camel_case",
+    "Camel-Case": "camel_case"
+  },
+  "dasherize": {
+    "Product": "product",
+    "SpecialGuest": "special-guest",
+    "ApplicationController": "application-controller",
+    "Area51Controller": "area51-controller",
+    "active_model": "active-model",
+    "active_model/errors": "active-model/errors",
+    "html_tidy": "html-tidy",
+    "HTMLTidy": "html-tidy",
+    "HTMLTidyGenerator": "html-tidy-generator",
+    "ActiveModel::Errors": "active-model/errors",
+    "ActiveModel": "active-model",
+    "area51_controller": "area51-controller",
+    "product": "product",
+    "special_guest": "special-guest",
+    "application_controller": "application-controller",
+    "CamelOctopi": "camel-octopi",
+    "camel_octopus": "camel-octopus",
+    "FreeBSD": "free-bsd",
+    "HTML": "html",
+    "Capital": "capital",
+    "capital_city": "capital-city",
+    "CapitalCity": "capital-city",
+    "SSLError": "ssl-error",
+    "ssl_error": "ssl-error",
+    "PhDRequired": "ph-d-required",
+    "phd_required": "phd-required",
+    "CamelCase": "camel-case",
+    "Camel_Case": "camel-case",
+    "camel_case": "camel-case",
+    "camel-case": "camel-case",
+    "Camel-Case": "camel-case"
+  },
+  "tableize": {
+    "Product": "products",
+    "SpecialGuest": "special_guests",
+    "ApplicationController": "application_controllers",
+    "Area51Controller": "area51_controllers",
+    "active_model": "active_models",
+    "active_model/errors": "active_model/errors",
+    "html_tidy": "html_tidies",
+    "HTMLTidy": "html_tidies",
+    "HTMLTidyGenerator": "html_tidy_generators",
+    "ActiveModel::Errors": "active_model/errors",
+    "ActiveModel": "active_models",
+    "area51_controller": "area51_controllers",
+    "product": "products",
+    "special_guest": "special_guests",
+    "application_controller": "application_controllers",
+    "CamelOctopi": "camel_octopi",
+    "camel_octopus": "camel_octopi",
+    "FreeBSD": "free_bsds",
+    "HTML": "htmls",
+    "Capital": "capitals",
+    "capital_city": "capital_cities",
+    "CapitalCity": "capital_cities",
+    "SSLError": "ssl_errors",
+    "ssl_error": "ssl_errors",
+    "PhDRequired": "ph_d_requireds",
+    "phd_required": "phd_requireds",
+    "CamelCase": "camel_cases",
+    "Camel_Case": "camel_cases",
+    "camel_case": "camel_cases",
+    "camel-case": "camel_cases",
+    "Camel-Case": "camel_cases"
+  },
+  "classify": {
+    "Product": "Product",
+    "SpecialGuest": "SpecialGuest",
+    "ApplicationController": "ApplicationController",
+    "Area51Controller": "Area51Controller",
+    "active_model": "ActiveModel",
+    "active_model/errors": "ActiveModel::Error",
+    "html_tidy": "HtmlTidy",
+    "HTMLTidy": "HTMLTidy",
+    "HTMLTidyGenerator": "HTMLTidyGenerator",
+    "ActiveModel::Errors": "ActiveModel::Error",
+    "ActiveModel": "ActiveModel",
+    "area51_controller": "Area51Controller",
+    "product": "Product",
+    "special_guest": "SpecialGuest",
+    "application_controller": "ApplicationController",
+    "CamelOctopi": "CamelOctopus",
+    "camel_octopus": "CamelOctopus",
+    "FreeBSD": "FreeBSD",
+    "HTML": "HTML",
+    "Capital": "Capital",
+    "capital_city": "CapitalCity",
+    "CapitalCity": "CapitalCity",
+    "SSLError": "SSLError",
+    "ssl_error": "SslError",
+    "PhDRequired": "PhDRequired",
+    "phd_required": "PhdRequired",
+    "CamelCase": "CamelCase",
+    "Camel_Case": "CamelCase",
+    "camel_case": "CamelCase",
+    "camel-case": "Camel-case",
+    "Camel-Case": "Camel-Case",
+    "schema.posts": "Post",
+    "ham_and_eggs": "HamAndEgg",
+    "posts": "Post"
+  },
+  "humanize": {
+    "employee_salary": "Employee salary",
+    "author_id": "Author",
+    "underground": "Underground",
+    "_id": "Id",
+    "author_comments_count": "Author comments count",
+    "employee_id_number": "Employee id number"
+  },
+  "humanize_keep_id": {
+    "employee_salary": "Employee salary",
+    "author_id": "Author id",
+    "underground": "Underground",
+    "_id": "Id",
+    "author_comments_count": "Author comments count",
+    "employee_id_number": "Employee id number"
+  },
+  "titleize": {
+    "active_record": "Active Record",
+    "ActiveRecord": "Active Record",
+    "action web service": "Action Web Service",
+    "Action Web Service": "Action Web Service",
+    "Action web service": "Action Web Service",
+    "actionwebservice": "Actionwebservice",
+    "Actionwebservice": "Actionwebservice",
+    "david's code": "David's Code",
+    "David's code": "David's Code",
+    "david's Code": "David's Code",
+    "sgt. pepper's": "Sgt. Pepper's",
+    "i've just seen a face": "I've Just Seen A Face",
+    "maybe you'll be there": "Maybe You'll Be There",
+    "¿por qué?": "¿Por Qué?",
+    "Fred’s": "Fred’s",
+    "Fred`s": "Fred`s",
+    "x-men: the last stand": "X Men: The Last Stand",
+    "TWO WORDS": "Two Words",
+    "man from the boondocks": "Man From The Boondocks",
+    "raiders_of_the_lost_ark": "Raiders Of The Lost Ark"
+  },
+  "foreign_key": {
+    "Product": "product_id",
+    "SpecialGuest": "special_guest_id",
+    "ApplicationController": "application_controller_id",
+    "Area51Controller": "area51_controller_id",
+    "HTMLTidy": "html_tidy_id",
+    "HTMLTidyGenerator": "html_tidy_generator_id",
+    "ActiveModel::Errors": "errors_id",
+    "ActiveModel": "active_model_id",
+    "CamelOctopi": "camel_octopi_id",
+    "FreeBSD": "free_bsd_id",
+    "HTML": "html_id",
+    "Capital": "capital_id",
+    "CapitalCity": "capital_city_id",
+    "SSLError": "ssl_error_id",
+    "PhDRequired": "ph_d_required_id",
+    "CamelCase": "camel_case_id",
+    "Camel_Case": "camel_case_id",
+    "Camel-Case": "camel_case_id"
+  },
+  "parameterize": {
+    "Donald E. Knuth": "donald-e-knuth",
+    "Random text with *(bad)* characters": "random-text-with-bad-characters",
+    "Allow_Under_Scores": "allow_under_scores",
+    "Trailing bad characters!@#": "trailing-bad-characters",
+    "!@#Leading bad characters": "leading-bad-characters",
+    "Squeeze   separators": "squeeze-separators",
+    "Test with + sign": "test-with-sign",
+    "^très|Jolie-- ": "tres-jolie",
+    "Ærøskøbing": "aeroskobing",
+    "Straße": "strasse",
+    "Ünïcödé": "unicode",
+    "Crème brûlée": "creme-brulee"
+  },
+  "parameterize_underscore": {
+    "Donald E. Knuth": "donald_e_knuth",
+    "Random text with *(bad)* characters": "random_text_with_bad_characters",
+    "Allow_Under_Scores": "allow_under_scores",
+    "Trailing bad characters!@#": "trailing_bad_characters",
+    "!@#Leading bad characters": "leading_bad_characters",
+    "Squeeze   separators": "squeeze_separators",
+    "Test with + sign": "test_with_sign",
+    "^très|Jolie-- ": "tres_jolie--",
+    "Ærøskøbing": "aeroskobing",
+    "Straße": "strasse",
+    "Ünïcödé": "unicode",
+    "Crème brûlée": "creme_brulee"
+  },
+  "parameterize_preserve": {
+    "Donald E. Knuth": "Donald-E-Knuth",
+    "Random text with *(bad)* characters": "Random-text-with-bad-characters",
+    "Allow_Under_Scores": "Allow_Under_Scores",
+    "Trailing bad characters!@#": "Trailing-bad-characters",
+    "!@#Leading bad characters": "Leading-bad-characters",
+    "Squeeze   separators": "Squeeze-separators",
+    "Test with + sign": "Test-with-sign",
+    "^très|Jolie-- ": "tres-Jolie",
+    "Ærøskøbing": "AEroskobing",
+    "Straße": "Strasse",
+    "Ünïcödé": "Unicode",
+    "Crème brûlée": "Creme-brulee"
+  },
+  "ordinalize": {
+    "-1": "-1st",
+    "0": "0th",
+    "1": "1st",
+    "2": "2nd",
+    "3": "3rd",
+    "4": "4th",
+    "10": "10th",
+    "11": "11th",
+    "12": "12th",
+    "13": "13th",
+    "14": "14th",
+    "21": "21st",
+    "22": "22nd",
+    "23": "23rd",
+    "100": "100th",
+    "101": "101st",
+    "102": "102nd",
+    "103": "103rd",
+    "111": "111th",
+    "112": "112th",
+    "113": "113th",
+    "1000": "1000th",
+    "1001": "1001st",
+    "1011": "1011th",
+    "1012": "1012th"
+  },
+  "to_sentence": [
+    [
+      [],
+      ""
+    ],
+    [
+      [
+        "one"
+      ],
+      "one"
+    ],
+    [
+      [
+        "one",
+        "two"
+      ],
+      "one and two"
+    ],
+    [
+      [
+        "one",
+        "two",
+        "three"
+      ],
+      "one, two, and three"
+    ],
+    [
+      [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "a, b, c, and d"
+    ]
+  ],
+  "number_to_currency": [
+    [
+      0,
+      "$0.00"
+    ],
+    [
+      1,
+      "$1.00"
+    ],
+    [
+      -1,
+      "-$1.00"
+    ],
+    [
+      0.5,
+      "$0.50"
+    ],
+    [
+      1.005,
+      "$1.01"
+    ],
+    [
+      12.345,
+      "$12.35"
+    ],
+    [
+      123.456,
+      "$123.46"
+    ],
+    [
+      -123.456,
+      "-$123.46"
+    ],
+    [
+      1234,
+      "$1,234.00"
+    ],
+    [
+      12345,
+      "$12,345.00"
+    ],
+    [
+      123456,
+      "$123,456.00"
+    ],
+    [
+      1234567,
+      "$1,234,567.00"
+    ],
+    [
+      -1234567.891,
+      "-$1,234,567.89"
+    ],
+    [
+      999999,
+      "$999,999.00"
+    ],
+    [
+      1000000,
+      "$1,000,000.00"
+    ],
+    [
+      1234567890,
+      "$1,234,567,890.00"
+    ],
+    [
+      1234567890123,
+      "$1,234,567,890,123.00"
+    ],
+    [
+      0.001,
+      "$0.00"
+    ],
+    [
+      0.0001,
+      "$0.00"
+    ],
+    [
+      98.765,
+      "$98.77"
+    ],
+    [
+      100,
+      "$100.00"
+    ],
+    [
+      302.24398923423,
+      "$302.24"
+    ]
+  ],
+  "number_to_delimited": [
+    [
+      0,
+      "0"
+    ],
+    [
+      1,
+      "1"
+    ],
+    [
+      -1,
+      "-1"
+    ],
+    [
+      0.5,
+      "0.5"
+    ],
+    [
+      1.005,
+      "1.005"
+    ],
+    [
+      12.345,
+      "12.345"
+    ],
+    [
+      123.456,
+      "123.456"
+    ],
+    [
+      -123.456,
+      "-123.456"
+    ],
+    [
+      1234,
+      "1,234"
+    ],
+    [
+      12345,
+      "12,345"
+    ],
+    [
+      123456,
+      "123,456"
+    ],
+    [
+      1234567,
+      "1,234,567"
+    ],
+    [
+      -1234567.891,
+      "-1,234,567.891"
+    ],
+    [
+      999999,
+      "999,999"
+    ],
+    [
+      1000000,
+      "1,000,000"
+    ],
+    [
+      1234567890,
+      "1,234,567,890"
+    ],
+    [
+      1234567890123,
+      "1,234,567,890,123"
+    ],
+    [
+      0.001,
+      "0.001"
+    ],
+    [
+      0.0001,
+      "0.0001"
+    ],
+    [
+      98.765,
+      "98.765"
+    ],
+    [
+      100,
+      "100"
+    ],
+    [
+      302.24398923423,
+      "302.24398923423"
+    ]
+  ],
+  "number_to_rounded": [
+    [
+      0,
+      "0.000"
+    ],
+    [
+      1,
+      "1.000"
+    ],
+    [
+      -1,
+      "-1.000"
+    ],
+    [
+      0.5,
+      "0.500"
+    ],
+    [
+      1.005,
+      "1.005"
+    ],
+    [
+      12.345,
+      "12.345"
+    ],
+    [
+      123.456,
+      "123.456"
+    ],
+    [
+      -123.456,
+      "-123.456"
+    ],
+    [
+      1234,
+      "1234.000"
+    ],
+    [
+      12345,
+      "12345.000"
+    ],
+    [
+      123456,
+      "123456.000"
+    ],
+    [
+      1234567,
+      "1234567.000"
+    ],
+    [
+      -1234567.891,
+      "-1234567.891"
+    ],
+    [
+      999999,
+      "999999.000"
+    ],
+    [
+      1000000,
+      "1000000.000"
+    ],
+    [
+      1234567890,
+      "1234567890.000"
+    ],
+    [
+      1234567890123,
+      "1234567890123.000"
+    ],
+    [
+      0.001,
+      "0.001"
+    ],
+    [
+      0.0001,
+      "0.000"
+    ],
+    [
+      98.765,
+      "98.765"
+    ],
+    [
+      100,
+      "100.000"
+    ],
+    [
+      302.24398923423,
+      "302.244"
+    ]
+  ],
+  "number_to_rounded_sig": [
+    [
+      0,
+      "0.0"
+    ],
+    [
+      1,
+      "1.0"
+    ],
+    [
+      -1,
+      "-1.0"
+    ],
+    [
+      0.5,
+      "0.50"
+    ],
+    [
+      1.005,
+      "1.0"
+    ],
+    [
+      12.345,
+      "12"
+    ],
+    [
+      123.456,
+      "120"
+    ],
+    [
+      -123.456,
+      "-120"
+    ],
+    [
+      1234,
+      "1200"
+    ],
+    [
+      12345,
+      "12000"
+    ],
+    [
+      123456,
+      "120000"
+    ],
+    [
+      1234567,
+      "1200000"
+    ],
+    [
+      -1234567.891,
+      "-1200000"
+    ],
+    [
+      999999,
+      "1000000"
+    ],
+    [
+      1000000,
+      "1000000"
+    ],
+    [
+      1234567890,
+      "1200000000"
+    ],
+    [
+      1234567890123,
+      "1200000000000"
+    ],
+    [
+      0.001,
+      "0.0010"
+    ],
+    [
+      0.0001,
+      "0.00010"
+    ],
+    [
+      98.765,
+      "99"
+    ],
+    [
+      100,
+      "100"
+    ],
+    [
+      302.24398923423,
+      "300"
+    ]
+  ],
+  "number_to_percentage": [
+    [
+      0,
+      "0.000%"
+    ],
+    [
+      1,
+      "1.000%"
+    ],
+    [
+      -1,
+      "-1.000%"
+    ],
+    [
+      0.5,
+      "0.500%"
+    ],
+    [
+      1.005,
+      "1.005%"
+    ],
+    [
+      12.345,
+      "12.345%"
+    ],
+    [
+      123.456,
+      "123.456%"
+    ],
+    [
+      -123.456,
+      "-123.456%"
+    ],
+    [
+      1234,
+      "1234.000%"
+    ],
+    [
+      12345,
+      "12345.000%"
+    ],
+    [
+      123456,
+      "123456.000%"
+    ],
+    [
+      1234567,
+      "1234567.000%"
+    ],
+    [
+      -1234567.891,
+      "-1234567.891%"
+    ],
+    [
+      999999,
+      "999999.000%"
+    ],
+    [
+      1000000,
+      "1000000.000%"
+    ],
+    [
+      1234567890,
+      "1234567890.000%"
+    ],
+    [
+      1234567890123,
+      "1234567890123.000%"
+    ],
+    [
+      0.001,
+      "0.001%"
+    ],
+    [
+      0.0001,
+      "0.000%"
+    ],
+    [
+      98.765,
+      "98.765%"
+    ],
+    [
+      100,
+      "100.000%"
+    ],
+    [
+      302.24398923423,
+      "302.244%"
+    ]
+  ],
+  "number_to_human": [
+    [
+      0,
+      "0"
+    ],
+    [
+      1,
+      "1"
+    ],
+    [
+      -1,
+      "-1"
+    ],
+    [
+      0.5,
+      "0.5"
+    ],
+    [
+      1.005,
+      "1.01"
+    ],
+    [
+      12.345,
+      "12.3"
+    ],
+    [
+      123.456,
+      "123"
+    ],
+    [
+      -123.456,
+      "-123"
+    ],
+    [
+      1234,
+      "1.23 Thousand"
+    ],
+    [
+      12345,
+      "12.3 Thousand"
+    ],
+    [
+      123456,
+      "123 Thousand"
+    ],
+    [
+      1234567,
+      "1.23 Million"
+    ],
+    [
+      -1234567.891,
+      "-1.23 Million"
+    ],
+    [
+      999999,
+      "1 Million"
+    ],
+    [
+      1000000,
+      "1 Million"
+    ],
+    [
+      1234567890,
+      "1.23 Billion"
+    ],
+    [
+      1234567890123,
+      "1.23 Trillion"
+    ],
+    [
+      0.001,
+      "0.001"
+    ],
+    [
+      0.0001,
+      "0.0001"
+    ],
+    [
+      98.765,
+      "98.8"
+    ],
+    [
+      100,
+      "100"
+    ],
+    [
+      302.24398923423,
+      "302"
+    ]
+  ],
+  "number_to_human_size": [
+    [
+      0,
+      "0 Bytes"
+    ],
+    [
+      1,
+      "1 Byte"
+    ],
+    [
+      123,
+      "123 Bytes"
+    ],
+    [
+      1023,
+      "1023 Bytes"
+    ],
+    [
+      1024,
+      "1 KB"
+    ],
+    [
+      1234,
+      "1.21 KB"
+    ],
+    [
+      12345,
+      "12.1 KB"
+    ],
+    [
+      1234567,
+      "1.18 MB"
+    ],
+    [
+      1234567890,
+      "1.15 GB"
+    ],
+    [
+      1234567890123,
+      "1.12 TB"
+    ],
+    [
+      1125899906842624,
+      "1 PB"
+    ],
+    [
+      476741369856,
+      "444 GB"
+    ]
+  ],
+  "duration_parse": [
+    [
+      "P1Y",
+      {
+        "value": 31556952.0,
+        "iso8601": "P1Y",
+        "inspect": "1 year"
+      }
+    ],
+    [
+      "P1M",
+      {
+        "value": 2629746.0,
+        "iso8601": "P1M",
+        "inspect": "1 month"
+      }
+    ],
+    [
+      "P1W",
+      {
+        "value": 604800.0,
+        "iso8601": "P1W",
+        "inspect": "1 week"
+      }
+    ],
+    [
+      "P1D",
+      {
+        "value": 86400.0,
+        "iso8601": "P1D",
+        "inspect": "1 day"
+      }
+    ],
+    [
+      "PT1H",
+      {
+        "value": 3600.0,
+        "iso8601": "PT1H",
+        "inspect": "1 hour"
+      }
+    ],
+    [
+      "PT1M",
+      {
+        "value": 60.0,
+        "iso8601": "PT1M",
+        "inspect": "1 minute"
+      }
+    ],
+    [
+      "PT1S",
+      {
+        "value": 1.0,
+        "iso8601": "PT1S",
+        "inspect": "1 second"
+      }
+    ],
+    [
+      "P3Y6M4DT12H30M5S",
+      {
+        "value": 110839937.0,
+        "iso8601": "P3Y6M4DT12H30M5S",
+        "inspect": "3 years, 6 months, 4 days, 12 hours, 30 minutes, and 5 seconds"
+      }
+    ],
+    [
+      "P1Y2M10DT2H30M",
+      {
+        "value": 37689444.0,
+        "iso8601": "P1Y2M10DT2H30M",
+        "inspect": "1 year, 2 months, 10 days, 2 hours, and 30 minutes"
+      }
+    ],
+    [
+      "PT0.5S",
+      {
+        "value": 0.5,
+        "iso8601": "PT0.5S",
+        "inspect": "0.5 seconds"
+      }
+    ],
+    [
+      "P1DT0.5H",
+      {
+        "value": 88200.0,
+        "iso8601": "P1DT0.5H",
+        "inspect": "1 day and 0.5 hours"
+      }
+    ],
+    [
+      "-P1D",
+      {
+        "value": -86400.0,
+        "iso8601": "P-1D",
+        "inspect": "-1 days"
+      }
+    ],
+    [
+      "P0D",
+      {
+        "value": 0.0,
+        "iso8601": "PT0S",
+        "inspect": "0 days"
+      }
+    ],
+    [
+      "PT0S",
+      {
+        "value": 0.0,
+        "iso8601": "PT0S",
+        "inspect": "0 seconds"
+      }
+    ],
+    [
+      "P2W",
+      {
+        "value": 1209600.0,
+        "iso8601": "P2W",
+        "inspect": "2 weeks"
+      }
+    ]
+  ],
+  "duration_build": [
+    [
+      0,
+      "0 seconds"
+    ],
+    [
+      1,
+      "1 second"
+    ],
+    [
+      59,
+      "59 seconds"
+    ],
+    [
+      60,
+      "1 minute"
+    ],
+    [
+      3600,
+      "1 hour"
+    ],
+    [
+      86400,
+      "1 day"
+    ],
+    [
+      90061,
+      "1 day, 1 hour, 1 minute, and 1 second"
+    ],
+    [
+      2716146,
+      "1 month and 1 day"
+    ],
+    [
+      31556952,
+      "1 year"
+    ],
+    [
+      100000000,
+      "3 years, 2 months, 19 hours, 20 minutes, and 52 seconds"
+    ]
+  ],
+  "truncate": [
+    [
+      "Hello World!",
+      12,
+      "Hello World!"
+    ],
+    [
+      "Hello World!!",
+      12,
+      "Hello Wor..."
+    ],
+    [
+      "Once upon a time in a world far far away",
+      27,
+      "Once upon a time in a wo..."
+    ]
+  ],
+  "truncate_separator": [
+    [
+      "Once upon a time in a world far far away",
+      27,
+      "Once upon a time in a..."
+    ]
+  ],
+  "truncate_words": [
+    [
+      "Once upon a time in a world far far away",
+      4,
+      "Once upon a time..."
+    ],
+    [
+      "Hello Big World!",
+      3,
+      "Hello Big World!"
+    ],
+    [
+      "Hello Big World!",
+      2,
+      "Hello Big..."
+    ]
+  ],
+  "squish": [
+    [
+      "  foo   bar  \n  \t  boo",
+      "foo bar boo"
+    ],
+    [
+      " multi\n\nline  ",
+      "multi line"
+    ]
+  ],
+  "html_escape": [
+    [
+      "<script>alert('x')</script>",
+      "&lt;script&gt;alert(&#39;x&#39;)&lt;/script&gt;"
+    ],
+    [
+      "a & b \"c\"",
+      "a &amp; b &quot;c&quot;"
+    ],
+    [
+      "plain",
+      "plain"
+    ]
+  ],
+  "html_escape_once": [
+    [
+      "1 < 2 &amp; 3",
+      "1 &lt; 2 &amp; 3"
+    ],
+    [
+      "&lt;&gt;",
+      "&lt;&gt;"
+    ],
+    [
+      "&#39; &#x27; &foo;",
+      "&#39; &#x27; &foo;"
+    ]
+  ],
+  "to_query": [
+    [
+      {
+        "name": "David",
+        "nationality": "Danish"
+      },
+      "name=David&nationality=Danish"
+    ],
+    [
+      {
+        "a": [
+          1,
+          2
+        ],
+        "b": {
+          "c": "d e"
+        }
+      },
+      "a%5B%5D=1&a%5B%5D=2&b%5Bc%5D=d+e"
+    ],
+    [
+      {
+        "p": {
+          "q": [
+            1,
+            {
+              "r": 2
+            }
+          ]
+        }
+      },
+      "p%5Bq%5D%5B%5D=1&p%5Bq%5D%5B%5D%5Br%5D=2"
+    ],
+    [
+      {
+        "empty": [],
+        "nested": {},
+        "z": "1"
+      },
+      "z=1"
+    ]
+  ],
+  "message_verifier": {
+    "sha1": "eyJhIjoxLCJiIjpbMSwidHdvIl19--e7b48bb97f8e0247958579c86b40b8b3f50a98f6",
+    "sha256": "ImhlbGxvIg==--a8911e031faf58500d7b9c7ba0d5bd7215b1c442bfae41d92e8abfdcbcd9d3d7",
+    "purpose": "eyJfcmFpbHMiOnsiZGF0YSI6ImhpIiwicHVyIjoibG9naW4ifX0=--1f901a99730e8b7f657aab04685f793dffe4b76eec63292c1a59423bd6060900",
+    "expiring": "eyJfcmFpbHMiOnsiZGF0YSI6ImhpIiwiZXhwIjoiMjEwMC0wMS0wMlQwMzowNDowNS42NzhaIiwicHVyIjoibG9naW4ifX0=--17a1f26d57b7c4c662110ee747a191e0546c3c8619ba567dc1f317e68aff73b2",
+    "expired": "eyJfcmFpbHMiOnsiZGF0YSI6ImhpIiwiZXhwIjoiMjAwMS0wMS0wMVQwMDowMDowMC4wMDBaIiwicHVyIjoibG9naW4ifX0=--7c6f219f0b4d870a177ebab23874b2f891a2df6b8a0a6ce9b5f372ec647cddc1",
+    "legacy_purpose": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkltaHBJZz09IiwiZXhwIjpudWxsLCJwdXIiOiJsb2dpbiJ9fQ==--bdaa8df157e51df3d8b5e0064317fb9e12ef334a397b9552d7331e218ed96003",
+    "legacy_expiring": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkltaHBJZz09IiwiZXhwIjoiMjEwMC0wMS0wMlQwMzowNDowNS42NzhaIiwicHVyIjoibG9naW4ifX0=--918effc3c93948e0f80fb318b39cd5d088bebed5d69fb19dfad0f219fbf65892"
+  },
+  "message_encryptor": {
+    "key_hex": "52e9403df7626947321f211ce5c40b75234ff3b8fddc50ed5b319ddfe15e442d",
+    "message": "jC3Tu7P3q/AFNertn0C1PQ==--vF33oVS7rl29Nj8f--FmYA9GPlxlB9ruC9bwwSrQ==",
+    "purpose": "jVgulX++UtvX3Hno7/vdGn/1IvByUEWz2Sr6PxGuF4V/ZmAL92zBddaol4X6--BvQpKQbfXQUNujZu--DWSx2M6yGjgHfp8a8YT+6g==",
+    "cbc_message": "dU5USjFmQ3RaVThsSkFHUXBtU1QvYWVqZFVrL1Q0cVJVMXBKeFFlcVJQMD0tLWxuelg3UkhEb3l5S00vbnM3VTQ5VXc9PQ==--a784cf9469bd3039bc99c6a0782d36a1da2497d1",
+    "cbc_purpose": "dEtTVW5sZHJnc3NUTUFxYW81K0k1ZUw3RzhzQWwyaFAvUmg0ZGYvaXlDckZXMGVMc3g2UEJiT1BaNHh4NytTZi0tcjE1eDI5OEF4WEhDSThKc2hZL3Z1dz09--206738dcfff5c1775fee4ad0ca0b54343e8f5afc",
+    "url_safe": "b-Fm8AEclO3pFjAc7asPlQV25sUfsN5GOrPdr5EBrHGCj6M6vPQc9F_vUMOhguPgL3cA--1MO9p8cC4ePWzVQt--IM7RtrSpzQ1PBOB6vUDHdw",
+    "url_safe_verifier": "Ij8_Pj4_PyI--2290f195ec415aa376a42783c2c85bbb3b37d4ab"
+  },
+  "key_generator": {
+    "sha1_64": "fa7bab9eff3a06a5271ccfb9b6d8728d0c7a334d748b03071eefdf53ea75c37472496c4cd9a21bcff87cbb89d972a9b96f5a9e2068308f06e1cf6421f9dddfb3",
+    "sha256_32": "a8df899f3c4f204d967e0ad63c092987c10055ebb017b3d9d28add218d4f7aad"
+  },
+  "digest": {
+    "hello": "5d41402abc4b2a76b9719d911017c592"
+  },
+  "time_zone": [
+    {
+      "zone": "Eastern Time (US & Canada)",
+      "args": [
+        2024,
+        3,
+        10,
+        1,
+        30
+      ],
+      "to_s": "2024-03-10 01:30:00 -0500",
+      "xmlschema": "2024-03-10T01:30:00.000-05:00",
+      "plus_1_day": "2024-03-11 01:30:00 -0400",
+      "plus_24_hours": "2024-03-11 02:30:00 -0400",
+      "plus_1_month": "2024-04-10 01:30:00 -0400",
+      "minus_1_hour": "2024-03-10 00:30:00 -0500",
+      "beginning_of_week": "2024-03-04 00:00:00 -0500",
+      "end_of_month": "2024-03-31 23:59:59 -0400",
+      "beginning_of_day": "2024-03-10 00:00:00 -0500",
+      "end_of_quarter": "2024-03-31 23:59:59 -0400",
+      "strftime": "Sun 10 Mar 2024 01:30:00 -0500 -05:00 070 10 10 AM 01 3/10",
+      "db": "2024-03-10 06:30:00",
+      "long_ordinal": "March 10th, 2024 01:30",
+      "utc_offset": -18000,
+      "zone_formatted": "(GMT-05:00) Eastern Time (US & Canada)"
+    },
+    {
+      "zone": "Eastern Time (US & Canada)",
+      "args": [
+        2024,
+        3,
+        10,
+        2,
+        30
+      ],
+      "to_s": "2024-03-10 03:30:00 -0400",
+      "xmlschema": "2024-03-10T03:30:00.000-04:00",
+      "plus_1_day": "2024-03-11 03:30:00 -0400",
+      "plus_24_hours": "2024-03-11 03:30:00 -0400",
+      "plus_1_month": "2024-04-10 03:30:00 -0400",
+      "minus_1_hour": "2024-03-10 01:30:00 -0500",
+      "beginning_of_week": "2024-03-04 00:00:00 -0500",
+      "end_of_month": "2024-03-31 23:59:59 -0400",
+      "beginning_of_day": "2024-03-10 00:00:00 -0500",
+      "end_of_quarter": "2024-03-31 23:59:59 -0400",
+      "strftime": "Sun 10 Mar 2024 03:30:00 -0400 -04:00 070 10 10 AM 03 3/10",
+      "db": "2024-03-10 07:30:00",
+      "long_ordinal": "March 10th, 2024 03:30",
+      "utc_offset": -14400,
+      "zone_formatted": "(GMT-05:00) Eastern Time (US & Canada)"
+    },
+    {
+      "zone": "Eastern Time (US & Canada)",
+      "args": [
+        2024,
+        11,
+        3,
+        1,
+        30
+      ],
+      "to_s": "2024-11-03 01:30:00 -0400",
+      "xmlschema": "2024-11-03T01:30:00.000-04:00",
+      "plus_1_day": "2024-11-04 01:30:00 -0500",
+      "plus_24_hours": "2024-11-04 00:30:00 -0500",
+      "plus_1_month": "2024-12-03 01:30:00 -0500",
+      "minus_1_hour": "2024-11-03 00:30:00 -0400",
+      "beginning_of_week": "2024-10-28 00:00:00 -0400",
+      "end_of_month": "2024-11-30 23:59:59 -0500",
+      "beginning_of_day": "2024-11-03 00:00:00 -0400",
+      "end_of_quarter": "2024-12-31 23:59:59 -0500",
+      "strftime": "Sun 03 Nov 2024 01:30:00 -0400 -04:00 308 44 44 AM 01 11/3",
+      "db": "2024-11-03 05:30:00",
+      "long_ordinal": "November 3rd, 2024 01:30",
+      "utc_offset": -14400,
+      "zone_formatted": "(GMT-05:00) Eastern Time (US & Canada)"
+    },
+    {
+      "zone": "Pacific Time (US & Canada)",
+      "args": [
+        2024,
+        1,
+        31,
+        23,
+        59
+      ],
+      "to_s": "2024-01-31 23:59:00 -0800",
+      "xmlschema": "2024-01-31T23:59:00.000-08:00",
+      "plus_1_day": "2024-02-01 23:59:00 -0800",
+      "plus_24_hours": "2024-02-01 23:59:00 -0800",
+      "plus_1_month": "2024-02-29 23:59:00 -0800",
+      "minus_1_hour": "2024-01-31 22:59:00 -0800",
+      "beginning_of_week": "2024-01-29 00:00:00 -0800",
+      "end_of_month": "2024-01-31 23:59:59 -0800",
+      "beginning_of_day": "2024-01-31 00:00:00 -0800",
+      "end_of_quarter": "2024-03-31 23:59:59 -0700",
+      "strftime": "Wed 31 Jan 2024 23:59:00 -0800 -08:00 031 04 05 PM 11 1/31",
+      "db": "2024-02-01 07:59:00",
+      "long_ordinal": "January 31st, 2024 23:59",
+      "utc_offset": -28800,
+      "zone_formatted": "(GMT-08:00) Pacific Time (US & Canada)"
+    },
+    {
+      "zone": "London",
+      "args": [
+        2024,
+        3,
+        31,
+        0,
+        30
+      ],
+      "to_s": "2024-03-31 00:30:00 +0000",
+      "xmlschema": "2024-03-31T00:30:00.000+00:00",
+      "plus_1_day": "2024-04-01 00:30:00 +0100",
+      "plus_24_hours": "2024-04-01 01:30:00 +0100",
+      "plus_1_month": "2024-04-30 00:30:00 +0100",
+      "minus_1_hour": "2024-03-30 23:30:00 +0000",
+      "beginning_of_week": "2024-03-25 00:00:00 +0000",
+      "end_of_month": "2024-03-31 23:59:59 +0100",
+      "beginning_of_day": "2024-03-31 00:00:00 +0000",
+      "end_of_quarter": "2024-03-31 23:59:59 +0100",
+      "strftime": "Sun 31 Mar 2024 00:30:00 +0000 +00:00 091 13 13 AM 12 3/31",
+      "db": "2024-03-31 00:30:00",
+      "long_ordinal": "March 31st, 2024 00:30",
+      "utc_offset": 0,
+      "zone_formatted": "(GMT+00:00) London"
+    },
+    {
+      "zone": "Kathmandu",
+      "args": [
+        2024,
+        6,
+        15,
+        12,
+        0
+      ],
+      "to_s": "2024-06-15 12:00:00 +0545",
+      "xmlschema": "2024-06-15T12:00:00.000+05:45",
+      "plus_1_day": "2024-06-16 12:00:00 +0545",
+      "plus_24_hours": "2024-06-16 12:00:00 +0545",
+      "plus_1_month": "2024-07-15 12:00:00 +0545",
+      "minus_1_hour": "2024-06-15 11:00:00 +0545",
+      "beginning_of_week": "2024-06-10 00:00:00 +0545",
+      "end_of_month": "2024-06-30 23:59:59 +0545",
+      "beginning_of_day": "2024-06-15 00:00:00 +0545",
+      "end_of_quarter": "2024-06-30 23:59:59 +0545",
+      "strftime": "Sat 15 Jun 2024 12:00:00 +0545 +05:45 167 23 24 PM 12 6/15",
+      "db": "2024-06-15 06:15:00",
+      "long_ordinal": "June 15th, 2024 12:00",
+      "utc_offset": 20700,
+      "zone_formatted": "(GMT+05:45) Kathmandu"
+    },
+    {
+      "zone": "Sydney",
+      "args": [
+        2024,
+        4,
+        7,
+        2,
+        30
+      ],
+      "to_s": "2024-04-07 02:30:00 +1100",
+      "xmlschema": "2024-04-07T02:30:00.000+11:00",
+      "plus_1_day": "2024-04-08 02:30:00 +1000",
+      "plus_24_hours": "2024-04-08 01:30:00 +1000",
+      "plus_1_month": "2024-05-07 02:30:00 +1000",
+      "minus_1_hour": "2024-04-07 01:30:00 +1100",
+      "beginning_of_week": "2024-04-01 00:00:00 +1100",
+      "end_of_month": "2024-04-30 23:59:59 +1000",
+      "beginning_of_day": "2024-04-07 00:00:00 +1100",
+      "end_of_quarter": "2024-06-30 23:59:59 +1000",
+      "strftime": "Sun 07 Apr 2024 02:30:00 +1100 +11:00 098 14 14 AM 02 4/7",
+      "db": "2024-04-06 15:30:00",
+      "long_ordinal": "April 7th, 2024 02:30",
+      "utc_offset": 39600,
+      "zone_formatted": "(GMT+10:00) Sydney"
+    },
+    {
+      "zone": "UTC",
+      "args": [
+        2024,
+        2,
+        29,
+        12,
+        0
+      ],
+      "to_s": "2024-02-29 12:00:00 UTC",
+      "xmlschema": "2024-02-29T12:00:00.000Z",
+      "plus_1_day": "2024-03-01 12:00:00 UTC",
+      "plus_24_hours": "2024-03-01 12:00:00 UTC",
+      "plus_1_month": "2024-03-29 12:00:00 UTC",
+      "minus_1_hour": "2024-02-29 11:00:00 UTC",
+      "beginning_of_week": "2024-02-26 00:00:00 UTC",
+      "end_of_month": "2024-02-29 23:59:59 UTC",
+      "beginning_of_day": "2024-02-29 00:00:00 UTC",
+      "end_of_quarter": "2024-03-31 23:59:59 UTC",
+      "strftime": "Thu 29 Feb 2024 12:00:00 +0000 +00:00 060 08 09 PM 12 2/29",
+      "db": "2024-02-29 12:00:00",
+      "long_ordinal": "February 29th, 2024 12:00",
+      "utc_offset": 0,
+      "zone_formatted": "(GMT+00:00) UTC"
+    }
+  ],
+  "time_zone_parse": [
+    {
+      "zone": "Eastern Time (US & Canada)",
+      "input": "2024-07-04 12:00",
+      "to_s": "2024-07-04 12:00:00 -0400"
+    },
+    {
+      "zone": "Eastern Time (US & Canada)",
+      "input": "2024-07-04T12:00:00Z",
+      "to_s": "2024-07-04 08:00:00 -0400"
+    },
+    {
+      "zone": "Tokyo",
+      "input": "2024-01-01T00:00:00+05:30",
+      "to_s": "2024-01-01 03:30:00 +0900"
+    },
+    {
+      "zone": "Tokyo",
+      "input": "2024-12-31 23:59:59.5",
+      "to_s": "2024-12-31 23:59:59 +0900"
+    }
+  ]
+}
