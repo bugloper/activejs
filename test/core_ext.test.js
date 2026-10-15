@@ -13,7 +13,26 @@ import * as D from "../src/core_ext/date.js";
 import * as Num from "../src/core_ext/numeric.js";
 import { Duration, days, hours, minutes, months, years, weeks, seconds } from "../src/duration.js";
 
-test("inflections can be customised per locale", () => {
+// Inflection rules are process-wide, and runners such as `bun test` share one
+// process across files, so tests that add rules must put the old ones back.
+function restoringInflections(locale, fn) {
+  const i = I.inflections(locale);
+  const saved = {
+    plurals: [...i.plurals], singulars: [...i.singulars], humans: [...i.humans],
+    acronyms: Object.values(i.acronyms), uncountables: i.uncountables.toArray(),
+  };
+  try {
+    fn();
+  } finally {
+    Object.assign(i, { plurals: saved.plurals, singulars: saved.singulars, humans: saved.humans });
+    i.clear("acronyms");
+    for (const word of saved.acronyms) i.acronym(word);
+    i.clear("uncountables");
+    i.uncountable(...saved.uncountables);
+  }
+}
+
+test("inflections can be customised per locale", () => restoringInflections("en", () => restoringInflections("es", () => {
   I.inflections("en", (inflect) => {
     inflect.acronym("API");
     inflect.acronym("RESTful");
@@ -44,6 +63,12 @@ test("inflections can be customised per locale", () => {
 
   I.inflections("es").clear();
   assert.equal(I.pluralize("papel", "es"), "papel");
+})));
+
+test("customised inflections are restored afterwards", () => {
+  assert.equal(I.pluralize("octopus"), "octopi");
+  assert.equal(I.camelize("api_client"), "ApiClient");
+  assert.equal(I.pluralize("sushi"), "sushis");
 });
 
 test("inflector helpers", () => {

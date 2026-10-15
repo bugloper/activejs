@@ -20,7 +20,10 @@ test("core_ext global declarations match the installed methods", async () => {
   const before = Object.fromEntries(
     Object.entries(PROTOTYPES).map(([name, ctor]) => [name, new Set(Object.getOwnPropertyNames(ctor.prototype))]),
   );
-  const { uninstall } = await import("../src/core_ext/register.js");
+  // Install explicitly: the module may already be loaded (and uninstalled) by
+  // another test file when a runner shares one process across files.
+  const { install, uninstall } = await import("../src/core_ext/register.js");
+  install();
   const installed = Object.fromEntries(
     Object.entries(PROTOTYPES).map(([name, ctor]) => [
       name,

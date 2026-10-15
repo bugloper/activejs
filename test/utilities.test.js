@@ -239,7 +239,10 @@ test("time zones: Time.zone, useZone, find, conversions", async () => {
 });
 
 test("prototype extensions (activejs/core_ext)", async () => {
-  const { uninstall } = await import("../src/core_ext/register.js");
+  // Install explicitly: the module may already be loaded (and uninstalled) by
+  // another test file when a runner shares one process across files.
+  const { install, uninstall } = await import("../src/core_ext/register.js");
+  install();
   try {
     assert.equal("person".pluralize(), "people");
     assert.equal("ActiveModel::Errors".underscore(), "active_model/errors");
